@@ -1,12 +1,16 @@
 import 'package:fish_redux/fish_redux.dart';
 import 'package:flutter/material.dart';
 
+import 'grid/page.dart';
+import 'list/page.dart';
 import 'login/page.dart';
 
 Widget createApp() {
   final AbstractRoutes routes = PageRoutes(
     pages: <String, Page<Object, dynamic>>{
       'entrance_page': LoginPage(),
+      'grid_page': GridPage(),
+      'list_page':ListPage(),
     },
   );
 

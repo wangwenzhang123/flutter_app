@@ -21,6 +21,7 @@ Widget buildView(LoginState state, Dispatch dispatch, ViewService viewService) {
             ),
             onPressed: () {
               //todo 点击事件
+              dispatch(LoginActionCreator.onOpenGrid());
             }),
       ),
     ),

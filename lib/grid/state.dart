@@ -1,10 +1,13 @@
 import 'package:fish_redux/fish_redux.dart';
 
-class GridState implements Cloneable<GridState> {
+import 'gridModel.dart';
 
+class GridState implements Cloneable<GridState> {
+  List<GridModel> models;
   @override
   GridState clone() {
-    return GridState();
+    return GridState()
+      ..models=models;
   }
 }
 
